@@ -18,7 +18,7 @@ Benchmarks say this is the fastest way and **there is no relevant difference** i
 
 ### Object
 
-Fastest way to iterate an object is is using keys from `Object.key`
+Fastest way to iterate an object is using keys from `Object.key`
 
 ```js
 const keys = Object.keys(object)
@@ -36,10 +36,10 @@ Facts seen running tests
 
 - Running order affects result, I guess because of garbage collector. So cases are shuffled every time and every scenario runs 10 times.  
 **Run a single test may lead to wrong results**.
-- I started this project using [benchmark](https://benchmarkjs.com), but I switched to [benny](https://github.com/caderek/benny) because result are more consistent.
+- I started this project using [benchmark](https://benchmarkjs.com), but I switched to [benny](https://github.com/caderek/benny) because results are more consistent.
 - `for in` is always the slowest way to iterate an array (and also may introduce prototype pollution vulnerability).
 - `for in` is good to iterate an object but it also introduces prototype pollution vulnerability, and it is a way slower than using `Object.keys`.
-- benchmarks results on my laptop are influenced by laptop activity so I ran them in a VPS, to get the more consistent result possible.  
+- benchmarks results on my laptop are influenced by laptop activity so I ran them in a VPS, to get the more consistent results possible.  
 Of course all the test ran on the same machine.
 - `while` loop is excluded on purpose.
 
@@ -110,6 +110,13 @@ node report object
 run single test
 
 ```bash
-node iterate array 100 STRING 01
-# array|object^ size^ type^ run^
+# node iterate [subject] [size] [type] [#run]
+
+node iterate array1 100 STRING 01
 ```
+
+subject: array1|array2|object
+size: 10|100|1000|10000|100000|1000000
+type: STRING|NUMBER|DATE|OBJECT|MIX
+run: free label
+
