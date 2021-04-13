@@ -1,0 +1,20 @@
+{
+  "name": "node-fastest-array-iterate",
+  "version": "1.0.0",
+  "description": "What's the fastest way to iterate an array in node.js?",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simone-sanfratello/node-fastest-array-iterate.git"
+  },
+  "keywords": [],
+  "author": "Simone Sanfratello <simone@braceslab.com>",
+  "license": "GPL",
+  "dependencies": {
+    "array-shuffle": "^2.0.0",
+    "benny": "^3.6.15",
+    "object-path": "^0.11.5",
+    "pretty-bytes": "^5.6.0",
+    "systeminformation": "^5.6.10"
+  }
+}

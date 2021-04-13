@@ -1,0 +1,81 @@
+{
+  "name": "Iterate array1 | version 12 | size 1e+1 | type NUMBER | run #06",
+  "date": "2021-04-12T06:00:09.915Z",
+  "version": null,
+  "results": [
+    {
+      "name": "for of (var)",
+      "ops": 9953155,
+      "margin": 1.22,
+      "percentSlower": 15.63
+    },
+    {
+      "name": "for of (const)",
+      "ops": 9937198,
+      "margin": 1.58,
+      "percentSlower": 15.77
+    },
+    {
+      "name": "map",
+      "ops": 7427235,
+      "margin": 1.69,
+      "percentSlower": 37.04
+    },
+    {
+      "name": "for index n (let)",
+      "ops": 11560262,
+      "margin": 2.02,
+      "percentSlower": 2.01
+    },
+    {
+      "name": "for index (let)",
+      "ops": 11797473,
+      "margin": 2.09,
+      "percentSlower": 0
+    },
+    {
+      "name": "foreach",
+      "ops": 10894930,
+      "margin": 1.86,
+      "percentSlower": 7.65
+    },
+    {
+      "name": "reduce",
+      "ops": 10357619,
+      "margin": 1.33,
+      "percentSlower": 12.2
+    },
+    {
+      "name": "for index n (var)",
+      "ops": 11769530,
+      "margin": 1.51,
+      "percentSlower": 0.24
+    },
+    {
+      "name": "for of (let)",
+      "ops": 9784169,
+      "margin": 1.05,
+      "percentSlower": 17.07
+    },
+    {
+      "name": "for in",
+      "ops": 1018020,
+      "margin": 3.11,
+      "percentSlower": 91.37
+    },
+    {
+      "name": "for index (var)",
+      "ops": 10960598,
+      "margin": 4.91,
+      "percentSlower": 7.09
+    }
+  ],
+  "fastest": {
+    "name": "for index (let)",
+    "index": 4
+  },
+  "slowest": {
+    "name": "for in",
+    "index": 9
+  }
+}

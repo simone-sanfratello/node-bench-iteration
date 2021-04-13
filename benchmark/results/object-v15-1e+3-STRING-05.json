@@ -1,0 +1,33 @@
+{
+  "name": "Iterate object | version 15 | size 1e+3 | type STRING | run #05",
+  "date": "2021-04-10T09:22:46.853Z",
+  "version": null,
+  "results": [
+    {
+      "name": "object for entries",
+      "ops": 1084,
+      "margin": 1.02,
+      "percentSlower": 38.41
+    },
+    {
+      "name": "object for keys",
+      "ops": 1760,
+      "margin": 1.61,
+      "percentSlower": 0
+    },
+    {
+      "name": "object in",
+      "ops": 1710,
+      "margin": 0.96,
+      "percentSlower": 2.84
+    }
+  ],
+  "fastest": {
+    "name": "object for keys",
+    "index": 1
+  },
+  "slowest": {
+    "name": "object for entries",
+    "index": 0
+  }
+}

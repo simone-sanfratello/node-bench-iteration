@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- https://www.chartjs.org/docs/latest/samples/bar/horizontal.html -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" />
+
+  <script src="chart.js"></script>
+  <script src="system.js"></script>
+
+  <script>
+    const report = {}
+    const records = {}
+  </script>
+
+  <script src="array1/report.js"></script>
+  <script src="array1/records.js"></script>
+
+  <script src="array2/report.js"></script>
+  <script src="array2/records.js"></script>
+
+  <script src="object/report.js"></script>
+  <script src="object/records.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>node.js iteration benchmarks</title>
+</head>
+
+<body>
+  <section id="filter">
+    <div class="title">Filter</div>
+
+    <div class="fields">
+      <fieldset>
+        <legend>subject</legend>
+        <input type="radio" name="subject" value="array1" checked="checked">array stage 1<br>
+        <input type="radio" name="subject" value="array2">array stage 2<br>
+        <input type="radio" name="subject" value="object">object<br>
+      </fieldset>
+
+      <fieldset>
+        <legend>node.js version</legend>
+        <input type="checkbox" name="version" value="v15" checked="checked">15.13.0<br>
+        <input type="checkbox" name="version" value="v14" checked="checked">14.16.0<br>
+        <input type="checkbox" name="version" value="v12" checked="checked">12.22.1<br>
+      </fieldset>
+
+      <fieldset>
+        <legend>size</legend>
+        <input type="checkbox" name="size" value="1e+1" checked="checked">1e+1<br>
+        <input type="checkbox" name="size" value="1e+2" checked="checked">1e+2<br>
+        <input type="checkbox" name="size" value="1e+3" checked="checked">1e+3<br>
+        <input type="checkbox" name="size" value="1e+4" checked="checked">1e+4<br>
+        <input type="checkbox" name="size" value="1e+5" checked="checked">1e+5<br>
+        <input type="checkbox" name="size" value="1e+6" checked="checked">1e+6<br>
+      </fieldset>
+
+      <fieldset>
+        <legend>content type</legend>
+        <input type="checkbox" name="type" value="STRING" checked="checked">string<br>
+        <input type="checkbox" name="type" value="NUMBER" checked="checked">number<br>
+        <input type="checkbox" name="type" value="DATE" checked="checked">date<br>
+        <input type="checkbox" name="type" value="OBJECT" checked="checked">object<br>
+        <input type="checkbox" name="type" value="MIX" checked="checked">mix<br>
+      </fieldset>
+    </div>
+
+    <input type="button" value="Update" onclick="print()">
+  </section>
+
+  <section id="chart">
+    <div class="title">Chart</div>
+    <canvas id="chart-ops" width="16" height="9"></canvas>
+  </section>
+
+  <section id="records">
+    <div class="title">Records</div>
+
+    <div id="records-content">
+
+    </div>
+
+  </section>
+
+  <section id="system">
+    <div class="title">System</div>
+    <div id="system-content"></div>
+  </section>
+
+  <script src="lib.js"></script>
+
+</body>
+
+</html>

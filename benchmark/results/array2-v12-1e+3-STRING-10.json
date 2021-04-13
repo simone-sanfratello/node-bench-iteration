@@ -1,0 +1,63 @@
+{
+  "name": "Iterate array2 | version 12 | size 1e+3 | type STRING | run #10",
+  "date": "2021-04-12T12:49:32.968Z",
+  "version": null,
+  "results": [
+    {
+      "name": "for index (let) ++i",
+      "ops": 37245,
+      "margin": 3.37,
+      "percentSlower": 3.04
+    },
+    {
+      "name": "for index n (let)",
+      "ops": 37787,
+      "margin": 2.77,
+      "percentSlower": 1.63
+    },
+    {
+      "name": "for index (var) ++i",
+      "ops": 37562,
+      "margin": 1.55,
+      "percentSlower": 2.21
+    },
+    {
+      "name": "for index n (var) ++i",
+      "ops": 37626,
+      "margin": 2.27,
+      "percentSlower": 2.05
+    },
+    {
+      "name": "for index (let)",
+      "ops": 38412,
+      "margin": 0.82,
+      "percentSlower": 0
+    },
+    {
+      "name": "for index (var)",
+      "ops": 37959,
+      "margin": 0.84,
+      "percentSlower": 1.18
+    },
+    {
+      "name": "for index n (var)",
+      "ops": 36854,
+      "margin": 1.59,
+      "percentSlower": 4.06
+    },
+    {
+      "name": "for index n (let) ++i",
+      "ops": 38212,
+      "margin": 1.09,
+      "percentSlower": 0.52
+    }
+  ],
+  "fastest": {
+    "name": "for index (let)",
+    "index": 4
+  },
+  "slowest": {
+    "name": "for index n (var)",
+    "index": 6
+  }
+}
