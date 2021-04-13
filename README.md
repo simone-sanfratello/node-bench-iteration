@@ -2,7 +2,7 @@
 
 ## TLDR
 
-**[report](node-bench-iteration.github.io)**
+**[report](/public/node-bench-iteration/index.html)**
 
 ### Array
 
@@ -66,9 +66,9 @@ Array and Object
 
 #### Report
 
-[array](node-iteration-benchmarks.github.io?subject=array1)
+[array](/public/node-bench-iteration/index.html?subject=array1)
 
-[object](node-iteration-benchmarks.github.io?subject=object)
+[object](/public/node-bench-iteration/index.html?subject=object)
 
 ---
 
@@ -87,7 +87,7 @@ Array and Object
 
 #### Report
 
-[array](node-iteration-benchmarks.github.io?subject=array2)
+[array](/public/node-bench-iteration/index.html?subject=array2)
 
 ---
 
