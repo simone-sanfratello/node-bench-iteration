@@ -115,8 +115,7 @@ run single test
 node iterate array1 100 STRING 01
 ```
 
-subject: array1|array2|object
-size: 10|100|1000|10000|100000|1000000
-type: STRING|NUMBER|DATE|OBJECT|MIX
-run: free label
-
+subject: array1|array2|object  
+size: 10|100|1000|10000|100000|1000000  
+type: STRING|NUMBER|DATE|OBJECT|MIX  
+run: free label  
